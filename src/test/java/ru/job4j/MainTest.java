@@ -5,18 +5,16 @@ import static org.assertj.core.api.Assertions.*;
 
 public class MainTest {
 
-    @Test
-    public void whenActionThenResult() {
-        int excepted = 1;
-        int result = 1;
-        assertThat(result).isEqualTo(excepted);
+    public static void plus(int first, int second){
+        int sum = first + second;
+        System.out.println("first + second = " + sum);
     }
 
     @Test
-    public void changeSizeValue() {
-        int size = 10;
-        size = 100;
-        size = size - 5;
-        System.out.println("size = " + size);
+    public void result() {
+        MainTest.plus(100, 500);
+        MainTest.plus(4, 2);
+        MainTest.plus(3, 5);
     }
+
 }
