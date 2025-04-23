@@ -33,6 +33,7 @@ class X2Test {
         int result = X2.calc(a, b, c, x);
         Assert.assertEquals(expected, result);
     }
+
     @Test
     void whenA0B1C1X1Then40() {
         int a = 0;
@@ -43,6 +44,7 @@ class X2Test {
         int result = X2.calc(a, b, c, x);
         Assert.assertEquals(expected, result);
     }
+
     @Test
     void whenA1B0C1X1Then40() {
         int a = 1;
@@ -53,6 +55,7 @@ class X2Test {
         int result = X2.calc(a, b, c, x);
         Assert.assertEquals(expected, result);
     }
+
     @Test
     void whenA1B1C0X1Then40() {
         int a = 1;
@@ -63,6 +66,7 @@ class X2Test {
         int result = X2.calc(a, b, c, x);
         Assert.assertEquals(expected, result);
     }
+
     @Test
     void whenA1B1C1X0Then40() {
         int a = 1;
