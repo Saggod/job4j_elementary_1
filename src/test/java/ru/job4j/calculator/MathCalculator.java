@@ -7,6 +7,7 @@ public class MathCalculator {
         return sum(first, second)
                 + multiply(first, second);
     }
+
     public static double minusChar(double first, double second) {
         return minus(first, second);
     }

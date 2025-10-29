@@ -1,7 +1,7 @@
 package ru.job4j.condition;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.*;
 
 public class RectangleAreaTest {
 
@@ -11,7 +11,7 @@ public class RectangleAreaTest {
         int p = 6;
         double k = 2;
         double out = RectangleArea.square(p, k);
-        Assert.assertEquals(expected, out, 0.01);
+        assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
@@ -20,7 +20,7 @@ public class RectangleAreaTest {
         int p = 8;
         double k = 3;
         double out = RectangleArea.square(p, k);
-        Assert.assertEquals(expected, out, 0.01);
+        assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
@@ -29,6 +29,6 @@ public class RectangleAreaTest {
         int p = 16;
         double k = 3;
         double out = RectangleArea.square(p, k);
-        Assert.assertEquals(expected, out, 0.01);
+        assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
 }

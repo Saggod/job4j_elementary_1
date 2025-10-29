@@ -6,7 +6,5 @@ public class Main {
             int x = 1 * i;
             System.out.println("1 * " + i + " = " + x);
         }
-
-
     }
 }
